@@ -8,10 +8,11 @@ export class TwoPlayerGameService {
 
   twoPlayerGamesUrl = '/api/games/twoPlayer/'
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   getTwoPlayerGames(): Observable<TwoPlayerGame> {
-    return this.http.get<TwoPlayerGame>(this.twoPlayerGamesUrl)
+    //return this.http.get<TwoPlayerGame>(this.twoPlayerGamesUrl)
+      return null
   }
 
 }
